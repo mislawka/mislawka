@@ -57,7 +57,8 @@ const dots = [
     [49.94, 21.83, 2], // Italy 2002
     [51.28, 22.72, 3], // Cruise Croatia
     [52.84, 26.26, 3], // Cruise Greece
-    [84.45, 75.8, 4] // Australia
+    [84.45, 75.80, 4], // Tasmania
+    [83.47, 67.52, 4] // Australia
 ];
 
 dots.forEach(dot => {
@@ -132,14 +133,4 @@ function main() {
 // Start the color toggling when the page loads
 $(document).ready(function() {
     main();
-});
-
-$(window).on('resize', () => {
-    let scaleFactor = 1 / window.devicePixelRatio;
-    dots.each(() => {
-        $(this).css({
-            width: `${initialSize * scaleFactor}px`,
-            height: `${initialSize * scaleFactor}px`
-        })
-    });
 });
