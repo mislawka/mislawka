@@ -12,14 +12,14 @@ const address_prefix = 'https://mislawka07.wordpress.com/';
 
 const dots = [
     // Red dots
-    [28.74, 21.92, 0, 'canada-2019', 'Wyprawa Kanada/Canada 2019'], // Journey Canada, Otlawa
-    [25.77, 36.11, 0, 'kuba-cuba-2016', 'Wyprawa Kuba/Cuba 2016'],  // Cuba
-    [22.92, 37.45, 0, 'meksyk-mexico-2016'],    // Mexico
-    [23.16, 41.52, 0], // Nicaragua
-    [23.95, 43.53, 0], // Costarica
-    [29.27, 61.97, 0], // Bolivia
-    [28.40, 63.68, 0], // Chile, Atacama
-    [28.72, 70.74, 0], // Chile, Santiago
+    [28.74, 21.92, 0, 'canada-2019', 'Wyprawa Kanada/Canada 2019'], 			// Journey Canada, Otlawa
+    [25.77, 36.11, 0, 'kuba-cuba-2016', 'Wyprawa Kuba/Cuba 2016'],  			// Cuba
+    [22.92, 37.45, 0, 'meksyk-mexico-2016', 'Wyprawa Meksyk/Mexico 2016'],    	// Mexico
+    [23.16, 41.52, 0, 'nicaragua-2019', 'Wyprawa Nikaragua/Nicaragua 2019'], 	// Nicaragua
+    [23.95, 43.53, 0, 'costarica-2019', 'Wyprawa Kostaryka/Costa Rica 2019'],	// Costarica
+    [29.27, 61.97, 0, 'boliwia-bolivia-2017', 'Wyprawa Boliwia/Bolivia 2017'], 	// Bolivia
+    [28.40, 63.68, 0, 'chile-2017-atacama', 'Wyprawa Chile 2017 - Atacama'], 	// Chile, Atacama
+    [28.72, 70.74, 0, 'chile-2017', 'Wyprawa Chile 2017'], 						// Chile, Santiago
     [44.05, 10.31, 0], // Iceland
     [46.93, 17.82, 0], // Wales
     [53.52, 19.24, 0], // Ukraine
