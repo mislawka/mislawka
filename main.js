@@ -7,13 +7,14 @@ const colors = [
     '#326CC9', // Blue
     '#E042F5', // Purple
 ];
-//[, 0], // 
+
+const address_prefix = 'https://mislawka07.wordpress.com/';
 
 const dots = [
     // Red dots
-    [28.74, 21.92, 0], // Journey Canada, Otlawa
-    [25.77, 36.11, 0], // Cuba
-    [22.92, 37.45, 0], // Mexico
+    [28.74, 21.92, 0, 'canada-2019', 'Wyprawa Kanada/Canada 2019'], // Journey Canada, Otlawa
+    [25.77, 36.11, 0, 'kuba-cuba-2016', 'Wyprawa Kuba/Cuba 2016'],  // Cuba
+    [22.92, 37.45, 0, 'meksyk-mexico-2016'],    // Mexico
     [23.16, 41.52, 0], // Nicaragua
     [23.95, 43.53, 0], // Costarica
     [29.27, 61.97, 0], // Bolivia
@@ -62,7 +63,7 @@ const dots = [
 ];
 
 dots.forEach(dot => {
-	$('#map').append(`<div class="dot" data-color="${colors[dot[2]]}"></div>`);
+	$('#map').append(`<a href="${address_prefix + dot[3]}" title="${dot[4]}" target="_blank"><div class="dot" data-color="${colors[dot[2]]}"></div></a>`);
 });
 
 // Position the dots dynamically based on the dots array
