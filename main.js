@@ -1,4 +1,4 @@
-let debug = true;
+let debug = false;
 
 const colors = [
     '#FF0000', // Red
