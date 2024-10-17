@@ -24,8 +24,8 @@ const dots = [
     [53.52, 19.24, 0, 'ukrainaukraine-2007', 'Wyprawa Ukraina/Ukraine 2007'], 						// Ukraine
     [45.60, 17.52, 0, 'irlandia-ireland-2016', 'Wyprawa Irlandia/Ireland 2016'], 					// Ireland
     [53.23, 15.68, 0, 'ryga-riga-2017', 'Wyprawa Łotwa/Latvia -Ryga/Riga 2017'], 					// Latvia, Riga
-    [45.02, 30.86, 0, 'morocco-2018', 'Wyprawa Maroko/Morocco 2018'], 							// Morocco
-    [52.80, 70.89, 0, 'rpa-cape-town-2015', 'Wyprawa RPA/South Africa 2015 - Cape Town'], 				// RPA, Cape Town
+    [45.52, 30.86, 0, 'morocco-2018', 'Wyprawa Maroko/Morocco 2018'], 							// Morocco
+    [52.80, 71.00, 0, 'rpa-cape-town-2015', 'Wyprawa RPA/South Africa 2015 - Cape Town'], 				// RPA, Cape Town
     [55.41, 68.59, 0, 'rpa-durban-2015', 'Wyprawa RPA/South Africa 2015 - Durban'], 					// RPA, Durban
     [54.63, 65.98, 0, 'rpa-pretoria-2015', 'Wyprawa RPA/South Africa 2015 - Johannesburg, Pretoria'], 			// RPA, Pretoria
     [54.63, 26.41, 0, 'turcjaturkey-2014', 'Wyprawa Turcja/Turkey 2014'], 						// Turkey
