@@ -24,7 +24,7 @@ const dots = [
     [53.52, 19.24, 0, 'ukrainaukraine-2007', 'Wyprawa Ukraina/Ukraine 2007'], 						// Ukraine
     [45.60, 17.52, 0, 'irlandia-ireland-2016', 'Wyprawa Irlandia/Ireland 2016'], 					// Ireland
     [53.23, 15.68, 0, 'ryga-riga-2017', 'Wyprawa Łotwa/Latvia -Ryga/Riga 2017'], 					// Latvia, Riga
-    [45.52, 30.86, 0, 'morocco-2018', 'Wyprawa Maroko/Morocco 2018'], 							// Morocco
+    [45.55, 30.37, 0, 'morocco-2018', 'Wyprawa Maroko/Morocco 2018'], 							// Morocco
     [52.80, 71.00, 0, 'rpa-cape-town-2015', 'Wyprawa RPA/South Africa 2015 - Cape Town'], 				// RPA, Cape Town
     [55.41, 68.59, 0, 'rpa-durban-2015', 'Wyprawa RPA/South Africa 2015 - Durban'], 					// RPA, Durban
     [54.63, 65.98, 0, 'rpa-pretoria-2015', 'Wyprawa RPA/South Africa 2015 - Johannesburg, Pretoria'], 			// RPA, Pretoria
@@ -45,7 +45,7 @@ const dots = [
     [76.42, 43.59, 0, 'wietnamvietnam-2013', 'Wyprawa Wietnam/Vietnam 2013'], 						// Vietnam
     [74.71, 40.98, 0, 'tajlandiathailand-2013', 'Wyprawa Tajlandia/Thailand 2013'], 					// Thailand
     [76.88, 54.27, 0, 'indonezjaindonesia-2014', 'Wyprawa Indonezja/Indonesia 2014'], 					// Indonesia
-    [55.74, 31.34, 0, 'egiptegypt-2012', 'Wyprawa Egipt/Egypt 2012'], 							// Egypt
+    [55.44, 34.88, 0, 'egiptegypt-2012', 'Wyprawa Egipt/Egypt 2012'], 							// Egypt
     [51.44, 14.14, 1, 'karlskrona-maraton-bike-2011', 'Rajd Karlskrona Maraton Bike 2011'], 				// Karlskrona
     [51.28, 16.03, 1, 'bornholm-2006', 'Rajd Bornholm 2006'], 								// Bornholm
     [51.05, 17.77, 1, 'rajd-nysa-odra-2014', 'Rajd Nysa-Odra 2014'], 							// Nysa-Odra
