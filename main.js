@@ -24,8 +24,8 @@ const dots = [
     [53.52, 19.24, 0, 'ukrainaukraine-2007', 'Wyprawa Ukraina/Ukraine 2007'], 						// Ukraine
     [45.60, 17.52, 0, 'irlandia-ireland-2016', 'Wyprawa Irlandia/Ireland 2016'], 					// Ireland
     [53.23, 15.68, 0, 'ryga-riga-2017', 'Wyprawa Łotwa/Latvia -Ryga/Riga 2017'], 					// Latvia, Riga
-    [44.82, 30.86, 0, 'morocco-2018', 'Wyprawa Maroko/Morocco 2018'], 							// Morocco
-    [52.30, 70.89, 0, 'rpa-cape-town-2015', 'Wyprawa RPA/South Africa 2015 - Cape Town'], 				// RPA, Cape Town
+    [45.02, 30.86, 0, 'morocco-2018', 'Wyprawa Maroko/Morocco 2018'], 							// Morocco
+    [52.60, 70.89, 0, 'rpa-cape-town-2015', 'Wyprawa RPA/South Africa 2015 - Cape Town'], 				// RPA, Cape Town
     [55.41, 68.59, 0, 'rpa-durban-2015', 'Wyprawa RPA/South Africa 2015 - Durban'], 					// RPA, Durban
     [54.63, 65.98, 0, 'rpa-pretoria-2015', 'Wyprawa RPA/South Africa 2015 - Johannesburg, Pretoria'], 			// RPA, Pretoria
     [54.63, 26.41, 0, 'turcjaturkey-2014', 'Wyprawa Turcja/Turkey 2014'], 						// Turkey
@@ -50,8 +50,8 @@ const dots = [
     [51.28, 16.03, 1, 'bornholm-2006', 'Rajd Bornholm 2006'], 								// Bornholm
     [51.05, 17.77, 1, 'rajd-nysa-odra-2014', 'Rajd Nysa-Odra 2014'], 							// Nysa-Odra
     [53.36, 16.60, 1, 'wilnovilnius-2011', 'Rajd Gdańsk - Wilno 2011'], 						// Gdansk - Vilnius
-    [45.37, 23.96, 1, 'camino-frances-camino-de-santiago-2010', 'Rajd Roncesvalles - Camino de Santiago 2010'], 	// Camino Frances
-    [45.91, 27.33, 1, 'via-de-la-plata-camino-de-santiago-2012', 'Rajd Sevilla - Camino de Santiago 2012'], 		// Camino Via de la Plata
+    [45.60, 23.96, 1, 'camino-frances-camino-de-santiago-2010', 'Rajd Roncesvalles - Camino de Santiago 2010'], 	// Camino Frances
+    [45.81, 27.33, 1, 'via-de-la-plata-camino-de-santiago-2012', 'Rajd Sevilla - Camino de Santiago 2012'], 		// Camino Via de la Plata
     [47.78, 23.54, 2, 'pirenejepyrenees-2004', 'Wyprawa Pireneje/Pyrenees 2004'], 					// Pyrenees
     [51.28, 24.72, 2, 'wlochyitaly-2001', 'Wyprawa Włochy/Italy 2001'], 						// Italy 2001
     [49.94, 21.83, 2, 'wlochyitaly-2002', 'Wyprawa Włochy/Italy 2002'], 						// Italy 2002
