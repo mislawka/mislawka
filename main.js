@@ -28,7 +28,7 @@ const dots = [
     [52.80, 71.00, 0, 'rpa-cape-town-2015', 'Wyprawa RPA/South Africa 2015 - Cape Town'], 				// RPA, Cape Town
     [55.41, 68.59, 0, 'rpa-durban-2015', 'Wyprawa RPA/South Africa 2015 - Durban'], 					// RPA, Durban
     [54.63, 65.98, 0, 'rpa-pretoria-2015', 'Wyprawa RPA/South Africa 2015 - Johannesburg, Pretoria'], 			// RPA, Pretoria
-    [54.63, 26.41, 0, 'turcjaturkey-2014', 'Wyprawa Turcja/Turkey 2014'], 						// Turkey
+    [54.93, 26.41, 0, 'turcjaturkey-2014', 'Wyprawa Turcja/Turkey 2014'], 						// Turkey
     [52.74, 22.69, 0, 'serbia-2015', 'Wyprawa Serbia 2015'], 								// Serbia
     [51.86, 22.02, 0, 'chorwacjacroatia-2003', 'Wyprawa Chorwacja/Croatia 2003/2015'], 					// Croatia
     [51.93, 23.23, 0, 'bih-2015', 'Wyprawa Bosnia i Hercegowina/Bosnia and Herzegovina 2015'], 				// Bosnia And Herzegovina
@@ -51,7 +51,7 @@ const dots = [
     [51.05, 17.77, 1, 'rajd-nysa-odra-2014', 'Rajd Nysa-Odra 2014'], 							// Nysa-Odra
     [53.36, 16.60, 1, 'wilnovilnius-2011', 'Rajd Gdańsk - Wilno 2011'], 						// Gdansk - Vilnius
     [46.19, 26.76, 1, 'camino-frances-camino-de-santiago-2010', 'Rajd Roncesvalles - Camino de Santiago 2010'], 	// Camino Frances
-    [45.81, 27.33, 1, 'via-de-la-plata-camino-de-santiago-2012', 'Rajd Sevilla - Camino de Santiago 2012'], 		// Camino Via de la Plata
+    [46.21, 26.83, 1, 'via-de-la-plata-camino-de-santiago-2012', 'Rajd Sevilla - Camino de Santiago 2012'], 		// Camino Via de la Plata
     [47.78, 23.54, 2, 'pirenejepyrenees-2004', 'Wyprawa Pireneje/Pyrenees 2004'], 					// Pyrenees
     [51.28, 24.72, 2, 'wlochyitaly-2001', 'Wyprawa Włochy/Italy 2001'], 						// Italy 2001
     [49.94, 21.83, 2, 'wlochyitaly-2002', 'Wyprawa Włochy/Italy 2002'], 						// Italy 2002
