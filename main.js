@@ -50,8 +50,8 @@ const dots = [
     [51.28, 16.03, 1, 'bornholm-2006', 'Rajd Bornholm 2006'], 								// Bornholm
     [51.05, 17.77, 1, 'rajd-nysa-odra-2014', 'Rajd Nysa-Odra 2014'], 							// Nysa-Odra
     [53.36, 16.60, 1, 'wilnovilnius-2011', 'Rajd Gdańsk - Wilno 2011'], 						// Gdansk - Vilnius
-    [46.19, 26.76, 1, 'camino-frances-camino-de-santiago-2010', 'Rajd Roncesvalles - Camino de Santiago 2010'], 	// Camino Frances
-    [46.21, 26.83, 1, 'via-de-la-plata-camino-de-santiago-2012', 'Rajd Sevilla - Camino de Santiago 2012'], 		// Camino Via de la Plata
+    [45.45, 23.33, 1, 'camino-frances-camino-de-santiago-2010', 'Rajd Roncesvalles - Camino de Santiago 2010'], 	// Camino Frances
+    [46.19, 26.76, 1, 'via-de-la-plata-camino-de-santiago-2012', 'Rajd Sevilla - Camino de Santiago 2012'], 		// Camino Via de la Plata
     [47.78, 23.54, 2, 'pirenejepyrenees-2004', 'Wyprawa Pireneje/Pyrenees 2004'], 					// Pyrenees
     [51.28, 24.72, 2, 'wlochyitaly-2001', 'Wyprawa Włochy/Italy 2001'], 						// Italy 2001
     [49.94, 21.83, 2, 'wlochyitaly-2002', 'Wyprawa Włochy/Italy 2002'], 						// Italy 2002
