@@ -59,7 +59,7 @@ const dots = [
     [51.28, 22.72, 3, 'chorwacja-croatia-2019-rejs', 'Rejs Chorwacja/Croatia 2019'], 					// Cruise Croatia
     [52.84, 26.26, 3, 'grecjagreece-2013', 'Rejs Grecja/Greece 2013'], 							// Cruise Greece
     [84.45, 75.80, 4, 'australia-i-tasmania-2024', 'Wyprawa Tasmania 2024 - comming soon'], 							// Tasmania
-    [83.47, 67.52, 4, 'australia-i-tasmania-2024', 'Wyprawa Austratia 2024 - comming soon'] 							// Australia
+    [83.47, 67.52, 4, 'australia-i-tasmania-2024', 'Wyprawa Austratia 2024 - comming soon'], 							// Australia
     [52.08, 16.66, 5, undefined, 'Polska/Poland']
 ];
 
