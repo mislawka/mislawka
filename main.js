@@ -139,4 +139,54 @@ function main() {
 // Start the color toggling when the page loads
 $(document).ready(function() {
     main();
+
+
+
+    const plane = $('#plane');
+    const dom_dots = $('.dot');
+    const map = $('#map');
+    
+    // Function to calculate the angle and distance between two points
+    function calculateAngleAndDistance(x1, y1, x2, y2) {
+      const dx = x2 - x1;
+      const dy = y2 - y1;
+      const angle = Math.atan2(dy, dx) * (180 / Math.PI); // Convert radian to degree
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      return { angle, distance };
+    }
+
+    // Move the plane to a new position
+    function movePlane(start, end) {
+        const mapOffset = map.offset();
+
+        const startX = start.offset().left + start.width() / 2 - mapOffset.left;
+        const startY = start.offset().top + start.height() / 2 - mapOffset.top;
+        const endX = end.offset().left + end.width() / 2 - mapOffset.left;
+        const endY = end.offset().top + end.height() / 2 - mapOffset.top;
+
+      const { angle, distance } = calculateAngleAndDistance(startX, startY, endX, endY);
+
+      // Rotate the plane
+      plane.css({
+        transform: `rotate(${angle}deg)`
+      });
+
+      // Animate the plane movement
+      plane.animate({
+        left: endX - plane.width() / 2 + 'px',
+        top: endY - plane.height() / 2 + 'px'
+      }, distance * 10, function() {
+        // After movement completes, start moving to another dot randomly
+        setTimeout(() => {
+          const newStart = end;
+          const newEnd = $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
+          movePlane(newStart, newEnd);
+        }, 1000); // Wait 0.5 seconds before next move
+      });
+    }
+
+    // Start moving the plane randomly between dots
+    const randomStartDot = $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
+    const randomEndDot = $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
+    movePlane(randomStartDot, randomEndDot);
 });
