@@ -62,4 +62,7 @@ footer > a {
 	border-radius: 4px;
 	cursor: pointer;
 	transform: translate(-50%, -50%);
+	-webkit-box-shadow: inset -1px -1px 1px 0px rgba(66, 68, 90, .5), inset 1px 1px 1px 0px rgba(255, 255, 255, .5);
+	-moz-box-shadow: inset -1px -1px 1px 0px rgba(66, 68, 90, .5), inset 1px 1px 1px 0px rgba(255, 255, 255, .5);
+	box-shadow: inset -1px -1px 1px 0px rgba(66, 68, 90, .5), inset 1px 1px 1px 0px rgba(255, 255, 255, .5);
 }
