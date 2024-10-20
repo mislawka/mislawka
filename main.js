@@ -140,11 +140,27 @@ function main() {
 $(document).ready(function() {
     main();
 
-
-
     const plane = $('#plane');
     const dom_dots = $('.dot');
     const map = $('#map');
+
+    let dom_poland = $(dom_dots[dom_dots.length-1]);
+    let last_dot = dom_poland.offset();
+    let map_offset = map.offset();
+
+    let to_poland = false;
+    let poland = [
+        last_dot.left - plane.width() / 2 - map_offset.left,
+        last_dot.top - plane.height() / 2 - map_offset.top
+    ];
+
+    plane.css({
+        left: poland[0] + 'px',
+        top: poland[1] + 'px'
+    });
+
+    //plane.css('left', dots[dots.length - 1][0]);
+    //plane.css('up', dots[dots.length - 1][1]);
     
     // Function to calculate the angle and distance between two points
     function calculateAngleAndDistance(x1, y1, x2, y2) {
@@ -164,29 +180,34 @@ $(document).ready(function() {
         const endX = end.offset().left + end.width() / 2 - mapOffset.left;
         const endY = end.offset().top + end.height() / 2 - mapOffset.top;
 
-      const { angle, distance } = calculateAngleAndDistance(startX, startY, endX, endY);
+        const { angle, distance } = calculateAngleAndDistance(startX, startY, endX, endY);
 
-      // Rotate the plane
-      plane.css({
-        transform: `rotate(${angle}deg)`
-      });
+        // Rotate the plane
+        plane.css({
+            transform: `rotate(${angle}deg)`
+        });
 
-      // Animate the plane movement
-      plane.animate({
-        left: endX - plane.width() / 2 + 'px',
-        top: endY - plane.height() / 2 + 'px'
-      }, distance * 10, function() {
+        // Animate the plane movement
+        plane.animate({
+            left: endX - plane.width() / 2 + 'px',
+            top: endY - plane.height() / 2 + 'px'
+        }, distance * 10, function() { 
+
         // After movement completes, start moving to another dot randomly
         setTimeout(() => {
-          const newStart = end;
-          const newEnd = $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
-          movePlane(newStart, newEnd);
-        }, 1000); // Wait 0.5 seconds before next move
+            const newStart = end;
+            const newEnd = to_poland ? dom_poland : $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
+
+            movePlane(newStart, newEnd);
+            to_poland = !to_poland;
+
+        }, 500); // Wait 0.5 seconds before next move
       });
     }
 
     // Start moving the plane randomly between dots
-    const randomStartDot = $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
+    //const randomStartDot = $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
+    const randomStartDot = $('.dot:last-child');
     const randomEndDot = $(dom_dots[Math.floor(Math.random() * dom_dots.length)]);
     movePlane(randomStartDot, randomEndDot);
 });
