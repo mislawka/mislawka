@@ -66,7 +66,7 @@ const translations = {
         "Chorwacja",
         "Grecja",
 
-        "Polska",
+        "Polska"
     ],
     "en": [
         "Canada",
@@ -120,7 +120,7 @@ const translations = {
         "Croatia",
         "Greece",
         
-        "Poland",
+        "Poland"
     ]
 };
 
