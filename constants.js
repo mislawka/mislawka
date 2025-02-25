@@ -54,6 +54,7 @@ const translations = {
         "Włochy",
         "Tasmania",
         "Austratia",
+        "Japonia",
         
         "Karlskrona Maraton",
         "Bornholm",
@@ -107,6 +108,7 @@ const translations = {
         "Italy",
         "Tasmania",
         "Austratia",
+        "Japan",
         
         "Karlskrona Maraton",
         "Bornholm",
