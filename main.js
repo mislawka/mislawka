@@ -34,6 +34,7 @@ const colors = [
     '#00D000', // Green
     '#326CC9', // Blue
     '#E042F5', // Purple
+    '#18F5EA', // Aqua
     'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 50%, rgba(255,0,0,1) 100%)'
 ];
 

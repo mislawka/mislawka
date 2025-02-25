@@ -52,8 +52,8 @@ const translations = {
         "Pireneje",
         "Włochy",
         "Włochy",
-        "Tasmania - comming soon",
-        "Austratia - comming soon",
+        "Tasmania",
+        "Austratia",
         
         "Karlskrona Maraton",
         "Bornholm",
@@ -105,8 +105,8 @@ const translations = {
         "Pyrenees",
         "Italy",
         "Italy",
-        "Tasmania - comming soon",
-        "Austratia - comming soon",
+        "Tasmania",
+        "Austratia",
         
         "Karlskrona Maraton",
         "Bornholm",
@@ -160,8 +160,9 @@ const dots = [
     [47.78, 23.54, 2, 'pirenejepyrenees-2004',       0, 2004], // Pyrenees
     [51.28, 24.72, 2, 'wlochyitaly-2001',            0, 2001], // Italy 2001
     [49.94, 21.83, 2, 'wlochyitaly-2002',            0, 2002], // Italy 2002
-    [84.45, 75.80, 4, 'australia-i-tasmania-2024',   0, 2024], // Tasmania
-    [83.47, 67.52, 4, 'australia-i-tasmania-2024',   0, 2024], // Australia
+    [84.45, 75.80, 5, 'australia-i-tasmania-2024',   0, 2024], // Tasmania
+    [83.47, 67.52, 5, 'australia-i-tasmania-2024',   0, 2024], // Australia
+    [83.59, 27.60, 4, 'japonia-japan-2025',          0, 2025], // Japan
 
     [51.44, 14.14, 1, 'karlskrona-maraton-bike-2011',            1, 2011], // Karlskrona
     [51.28, 16.03, 1, 'bornholm-2006',                           1, 2006], // Bornholm
@@ -173,5 +174,5 @@ const dots = [
     [51.28, 22.72, 3, 'chorwacja-croatia-2019-rejs', 2, 2019], // Cruise Croatia
     [52.84, 26.26, 3, 'grecjagreece-2013',           2, 2013], // Cruise Greece
 
-    [52.08, 16.66, 5, undefined, 3]
+    [52.08, 16.66, 6, undefined, 3]
 ];
