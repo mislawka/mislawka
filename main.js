@@ -1,4 +1,4 @@
-let debug = true;
+let debug = false;
 
 const colors = [
     '#FF0000', // Red
@@ -6,6 +6,7 @@ const colors = [
     '#00D000', // Green
     '#326CC9', // Blue
     '#E042F5', // Purple
+    '#18F5EA', // Aqua
     'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 50%, rgba(255,0,0,1) 100%)'
 ];
 
@@ -58,10 +59,10 @@ const dots = [
     [49.94, 21.83, 2, 'wlochyitaly-2002', 'Wyprawa Włochy/Italy 2002'], 						// Italy 2002
     [51.28, 22.72, 3, 'chorwacja-croatia-2019-rejs', 'Rejs Chorwacja/Croatia 2019'], 					// Cruise Croatia
     [52.84, 26.26, 3, 'grecjagreece-2013', 'Rejs Grecja/Greece 2013'], 							// Cruise Greece
-    [84.45, 75.80, 0, 'australia-i-tasmania-2024', 'Wyprawa Tasmania 2024 - comming soon'], 				// Tasmania
-    [83.58, 64.33, 0, 'australia-i-tasmania-2024', 'Wyprawa Australia 2024 - comming soon'], 				// Australia
-    [83.59, 27.60, 4, 'japonia-japan-2025', 'Wyprawa Japonia 2024 - comming soon'], 
-    [52.08, 16.66, 5, undefined, 'Polska/Poland']
+    [84.45, 75.80, 5, 'australia-i-tasmania-2024', 'Wyprawa Tasmania 2024'], 				// Tasmania
+    [83.58, 64.33, 5, 'australia-i-tasmania-2024', 'Wyprawa Australia 2024'], 				// Australia
+    [83.59, 27.60, 4, 'japonia-japan-2025', 'Wyprawa Japonia 2025 - comming soon'], 
+    [52.08, 16.66, 6, undefined, 'Polska/Poland']
 ];
 
 dots.forEach(dot => {
