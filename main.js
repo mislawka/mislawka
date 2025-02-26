@@ -41,7 +41,7 @@ $lang.on('change', () => {
         }
     });
 
-    $('footer > p').text(`Copyright © 2025 Sławka D. ${messages[lang][0]}`);
+    $('footer > span').text(`Copyright © 2025 Sławka D. ${messages[lang][0]}`);
     $('#ls-info > p').text(messages[lang][1]);
 });
 
@@ -68,7 +68,7 @@ function load_dots() {
         }
     });
 
-    $('footer > p').text(`Copyright © 2025 Sławka D. ${messages[lang][0]}`);
+    $('footer > span').text(`Copyright © 2025 Sławka D. ${messages[lang][0]}`);
     $('#ls-info > p').text(messages[lang][1]);
 
     // Position the dots dynamically based on the dots array
