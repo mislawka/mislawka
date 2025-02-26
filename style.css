@@ -27,6 +27,7 @@ footer {
 	background-color: #333444/*#42445A*/;
 	color: #FFFFFF;
 	font-size: 12px;
+	max-height: 16px;
 	-webkit-box-shadow: inset 0px 32px 12px -32px rgba(0, 0, 0, 1);
 	-moz-box-shadow: inset 0px 32px 12px -32px rgba(0, 0, 0, 1);
 	box-shadow: inset 0px 32px 12px -32px rgba(0, 0, 0, 1);
@@ -35,8 +36,26 @@ footer {
 footer > a {
 	position: absolute;
 	right: 6px;
-	color: #1E90FF;
+	bottom: 3px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 4px;
 }
+
+footer > a:hover {
+	background-color: #444555;
+}
+
+
+footer > select {
+	background: #444555;
+	color: #ffffff;
+}
+
+footer > select:focus {
+	outline: none;
+}
+
 
 #map {
     position: relative;
@@ -69,6 +88,30 @@ footer > a {
 
 .plane {
 	position: absolute;
-	width: 50px;
+	width: 20px;
 	height: auto;
+}
+
+#ls-info {
+	position: absolute;
+	right: 12px;
+	bottom: 12px;
+	background-color: #303030;
+	color: #ffffff;
+	padding: 12px;
+	max-width: 256px;
+	-webkit-box-shadow: 0px 0px 27px 4px #000000;
+	-moz-box-shadow: 0px 0px 27px 4px #000000;
+	box-shadow: 0px 0px 27px 4px #000000;
+}
+
+#ls-info > button {
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	padding: 6px 8px;
+}
+
+#ls-info > button:hover {
+	background-color: #ffffff40;
 }

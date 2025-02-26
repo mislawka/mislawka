@@ -1,17 +1,28 @@
 let debug = false;
 
-const langs = ['pl', 'en']
-var lang = 'en'
+if (localStorage.getItem('closed')) {
+    $('#ls-info').css('display', 'none');
+} else {
+    $('#ls-info>button').on('click', () => {
+        $('#ls-info').fadeOut();
+        localStorage.setItem('closed', true);
+    });
+}
+
+const langs = ['en', 'pl', 'es', 'fr', 'it']
+let lang = 'en'
 
 // Load cached language if stored
 if (localStorage.getItem('language')) {
     lang = localStorage.getItem('language');
 }
 
-if (langs.indexOf(lang) !== -1) {
-    $('#lang').prop('selectedIndex', langs.indexOf(lang))
+const langIndex = langs.indexOf(lang);
+if (langIndex !== -1) {
+    $('#lang').prop('selectedIndex', langIndex);
 } else {
-    throw RangeError('Invalid language stored in local storage!');
+    console.warn('Invalid language found in local storage, defaulting to English.');
+    lang = 'en';
 }
 
 
@@ -24,8 +35,14 @@ $lang.on('change', () => {
         if (dot[3] != undefined) {
             let title = `${prefixes[lang][dot[4]]} ${translations[lang][index]} ${dot[5]}`
             $('.dot').eq(index).attr('title', title);
+        } else {
+            let title = translations[lang][index]
+            $('.dot').eq(index).attr('title', title);
         }
     });
+
+    $('footer > p').text(`Copyright © 2025 Sławka D. ${messages[lang][0]}`);
+    $('#ls-info > p').text(messages[lang][1]);
 });
 
 const colors = [
@@ -33,7 +50,7 @@ const colors = [
     '#FE6E00', // Orange
     '#00D000', // Green
     '#326CC9', // Blue
-    '#E042F5', // Purple
+    '#FF00FF', // Purple
     '#18F5EA', // Aqua
     'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 50%, rgba(255,0,0,1) 100%)'
 ];
@@ -46,9 +63,13 @@ function load_dots() {
             let title = `${prefixes[lang][dot[4]]} ${translations[lang][index]} ${dot[5]}`
             $('#map').append(`<a href="${address_prefix + dot[3]}" title="${title}" target="_blank" class="dot-link"><div class="dot" data-color="${colors[dot[2]]}"></div></a>`);
         } else {
-            $('#map').append(`<div class="dot poland" data-color="${colors[dot[2]]}"></div>`);
+            let title = translations[lang][index]
+            $('#map').append(`<div class="dot poland" title="${title}" data-color="${colors[dot[2]]}"></div>`);
         }
     });
+
+    $('footer > p').text(`Copyright © 2025 Sławka D. ${messages[lang][0]}`);
+    $('#ls-info > p').text(messages[lang][1]);
 
     // Position the dots dynamically based on the dots array
     dots.forEach((dot, index) => {
@@ -99,17 +120,18 @@ function main() {
 
     /* Was meant to scale dots along with the website scale,
     so they are the same size on different zoom
-    levels, but didn't work.
+    levels, but didn't work.*/
 
     let initialSize = 6;
     let scaleFactor = 1 / window.devicePixelRatio;
-    $('.dot').each(() => {
+    $('.dot').each(function () {
         $(this).css({
             width: `${initialSize * scaleFactor}px`,
             height: `${initialSize * scaleFactor}px`
-        })
+        });
     });
-    */
+    
+    
 
     setTimeout(() => {
         $('.dot').each(function() {

@@ -2,8 +2,6 @@
 <html>
 <head>
 	<title>Sławka - Podróże spełnionych marzeń</title>
-
-	<meta http-equiv="Reply-to" content="mislawka07@gmail.com">
 	
 	<meta name="Author" content="Sławka, Jan">
 	<meta name="Copyright" content="Copyright © 2024 Sławka Dobrowolska. All rights reserved.">
@@ -20,24 +18,33 @@
 	<link rel="icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" type="text/css" href="fontello.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<main>
 		<div id="map">
 			<img src="map.png" alt="World Map" class="map-image">
-			<img src="./plane_new.png" class="plane" id="plane" alt="Plane">
+			<img src="plane.png" class="plane" id="plane" alt="Plane">
 		</div>
 	</main>
 
 	<footer>
-		Copyright © 2025 SławkaD. All rights reserved.
+		<span id="lrr">Copyright © 2025 SławkaD. All rights reserved</span>.
 		<select id="lang">
-			<option>&#x1F1F5;&#x1F1F1; Polski</option>
 			<option>&#x1F1FA;&#x1F1F8; English</option>
+			<option>&#x1F1F5;&#x1F1F1; Polski</option>
+			<option>&#x1F1EA;&#x1F1F8; Español</option>
+			<option>&#x1F1EB;&#x1F1F7; Français</option>
+			<option>&#x1F1EE;&#x1F1F9; Italiano</option>
 		</select>
-		<a href="mailto:mislawka07@gmail.com">E-mail</a>
+		<a href="mailto:mislawka07@gmail.com"><i class="icon-mail"></i> E-mail</a>
 	</footer>
+
+	<div id="ls-info">
+		<button id="close">&#x2715;</button>
+		<p>We use cookies to save your language preference. By continuing, you agree to this.</p>
+	</div>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="constants.js"></script>
